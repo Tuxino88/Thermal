@@ -1,0 +1,2 @@
+KERNEL=="AC*", SUBSYSTEM=="power_supply", ATTR{online}=="0", RUN+="/opt/thermal/bat.sh"
+KERNEL=="AC*", SUBSYSTEM=="power_supply", ATTR{online}=="1", RUN+="/opt/thermal/ac.sh"
