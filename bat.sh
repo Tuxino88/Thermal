@@ -14,8 +14,8 @@ echo balance_power | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/energy_perfor
 echo 12 | sudo tee /sys/devices/system/cpu/cpu*/power/energy_perf_bias
 echo 0 | sudo tee /sys/devices/system/cpu/intel_pstate/min_perf_pct
 echo 30 | sudo tee /sys/devices/system/cpu/intel_pstate/max_perf_pct
-echo 0 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
-echo 1 | sudo tee /sys/devices/system/cpu/intel_pstate/hwp_dynamic_boost
+echo 1 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
+echo 0 | sudo tee /sys/devices/system/cpu/intel_pstate/hwp_dynamic_boost
 echo 0 | sudo tee /proc/sys/kernel/nmi_watchdog
 echo balanced | sudo tee /sys/firmware/acpi/platform_profile 
 
